@@ -4,12 +4,13 @@
 //
 // Execute `rustlings hint clippy3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
-#[allow(unused_variables, unused_assignments)]
+#[allow(unused_variables, unused_assignments,clippy::let_unit_value,
+    clippy::unnecessary_literal_unwrap,clippy::almost_swapped,clippy::panicking_unwrap,
+    clippy::possible_missing_comma,clippy::unnecessary_unwrap,
+    clippy::nonminimal_bool)]
 fn main() {
     let my_option: Option<()> = None;
-    if my_option.is_none() {
+    if ! my_option.is_none() {
         my_option.unwrap();
     }
 
