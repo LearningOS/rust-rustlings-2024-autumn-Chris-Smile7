@@ -25,7 +25,7 @@
 
 #![forbid(unused_imports)] // Do not change this, (or the next) line.
 use std::sync::Arc;
-use std::thread;
+use std::thread::{self, JoinHandle};
 
 fn main() {
     let numbers: Vec<_> = (0..100u32).collect();
