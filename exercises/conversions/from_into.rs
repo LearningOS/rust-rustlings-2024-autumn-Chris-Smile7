@@ -44,6 +44,18 @@ impl Default for Person {
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
+        let mut p = Person::default();
+        if s.len() ==0 {
+            return p;
+        }
+
+        let list: Vec<&str> = s.split(",").collect();
+        
+        if list.get(0).len() == 0 || list.get(1).parse::<usize>().{
+
+        }
+        
+
     }
 }
 
